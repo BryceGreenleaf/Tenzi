@@ -23,6 +23,7 @@ namespace Tenzi
         //----------------------------------------------------------
 
         int totalScore = 0;
+        int totalScore2 = 0;
 
         private void addBtn_Click(object sender, EventArgs e)
         {
@@ -45,7 +46,7 @@ namespace Tenzi
         private void UpdateTotalScore()
         {
             // Update the label to display the current total score
-            result1.Text = "Result1: " + totalScore;
+            result1.Text = "Total Score: " + totalScore;
         }
 
         private void result1_Click(object sender, EventArgs e)
@@ -55,6 +56,45 @@ namespace Tenzi
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            // You can choose to handle text changes in textBox1 if needed
+            // For example, if you want to perform some action when the text changes.
+        }
+
+
+
+
+        private void addBtn2_Click(object sender, EventArgs e)
+        {
+            // Retrieve the numeric value from textBox1
+            if (int.TryParse(textBox2.Text, out int enteredValue2))
+            {
+                // Add the value to the total score
+                totalScore2 += enteredValue2;
+
+                // Update the total score display
+                UpdateTotalScore2();
+            }
+            else
+            {
+                // Handle the case where the entered text is not a valid integer
+                MessageBox.Show("Please enter a valid integer in the textbox.");
+            }
+        }
+
+        private void UpdateTotalScore2()
+        {
+            // Update the label to display the current total score
+            result2.Text = "Total Score: " + totalScore2;
+        }
+
+        private void result2_Click(object sender, EventArgs e)
+        {
+            // Display the total score in result1 when it is clicked
+            UpdateTotalScore2();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
             // You can choose to handle text changes in textBox1 if needed
             // For example, if you want to perform some action when the text changes.
@@ -84,6 +124,6 @@ namespace Tenzi
             this.Close();
         }
 
-      
+        
     }
 }

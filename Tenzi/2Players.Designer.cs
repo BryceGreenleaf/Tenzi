@@ -33,13 +33,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.result1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.result2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.btn_Back = new System.Windows.Forms.Button();
             this.addBtn = new System.Windows.Forms.Button();
             this.subtractBtn = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.subtractBtn2 = new System.Windows.Forms.Button();
+            this.addBtn2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -93,14 +93,14 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label4
+            // result2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(249, 99);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Total Score:";
+            this.result2.AutoSize = true;
+            this.result2.Location = new System.Drawing.Point(249, 99);
+            this.result2.Name = "result2";
+            this.result2.Size = new System.Drawing.Size(65, 13);
+            this.result2.TabIndex = 8;
+            this.result2.Text = "Total Score:";
             // 
             // textBox2
             // 
@@ -140,23 +140,24 @@
             this.subtractBtn.Text = "Subtract";
             this.subtractBtn.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // subtractBtn2
             // 
-            this.button4.Location = new System.Drawing.Point(317, 177);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 13;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.subtractBtn2.Location = new System.Drawing.Point(317, 177);
+            this.subtractBtn2.Name = "subtractBtn2";
+            this.subtractBtn2.Size = new System.Drawing.Size(75, 23);
+            this.subtractBtn2.TabIndex = 13;
+            this.subtractBtn2.Text = "Subtract";
+            this.subtractBtn2.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // addBtn2
             // 
-            this.button5.Location = new System.Drawing.Point(236, 177);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 12;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.addBtn2.Location = new System.Drawing.Point(236, 177);
+            this.addBtn2.Name = "addBtn2";
+            this.addBtn2.Size = new System.Drawing.Size(75, 23);
+            this.addBtn2.TabIndex = 12;
+            this.addBtn2.Text = "Add";
+            this.addBtn2.UseVisualStyleBackColor = true;
+            this.addBtn2.Click += new System.EventHandler(this.addBtn2_Click);
             // 
             // label3
             // 
@@ -174,12 +175,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(405, 292);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.subtractBtn2);
+            this.Controls.Add(this.addBtn2);
             this.Controls.Add(this.subtractBtn);
             this.Controls.Add(this.addBtn);
             this.Controls.Add(this.btn_Back);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.result2);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.result1);
@@ -201,13 +202,13 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label result1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label result2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button btn_Back;
         private System.Windows.Forms.Button addBtn;
         private System.Windows.Forms.Button subtractBtn;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button subtractBtn2;
+        private System.Windows.Forms.Button addBtn2;
         private System.Windows.Forms.Label label3;
     }
 }
