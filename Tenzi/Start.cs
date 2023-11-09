@@ -13,7 +13,7 @@ namespace Tenzi
     public partial class Start : Form
     {
 
-        private int counter;
+        
 
         public Start()
         {
