@@ -91,7 +91,6 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "Close";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // result2
             // 
@@ -119,7 +118,6 @@
             this.btn_Back.TabIndex = 9;
             this.btn_Back.Text = "Back";
             this.btn_Back.UseVisualStyleBackColor = true;
-            this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
             // 
             // addBtn
             // 
@@ -163,11 +161,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Helvetica", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(107, 9);
+            this.label3.Location = new System.Drawing.Point(98, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(188, 21);
+            this.label3.Size = new System.Drawing.Size(202, 21);
             this.label3.TabIndex = 14;
-            this.label3.Text = "First To 100 Wins";
+            this.label3.Text = "First To 100 Loses";
             // 
             // _2_Players
             // 
@@ -189,7 +187,6 @@
             this.Controls.Add(this.textBox1);
             this.Name = "_2_Players";
             this.Text = "2 Players";
-            this.Load += new System.EventHandler(this._2_Players_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
