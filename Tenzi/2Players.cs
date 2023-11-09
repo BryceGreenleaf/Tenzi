@@ -10,24 +10,21 @@ using System.Windows.Forms;
 
 namespace Tenzi
 {
-    public partial class Form1 : Form
+    public partial class _2_Players : Form
     {
-
-        private int counter;
-
-        public Form1()
+        public _2_Players()
         {
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void _2_Players_Load(object sender, EventArgs e)
         {
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            this.Close();
         }
     }
 }
